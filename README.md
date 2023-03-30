@@ -27,7 +27,8 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <p>
 
 STEP 1
-</p> First, we want to create a Windows 10 Virtual Machine with 2-4 CPU’s.
+
+First we want to create a Windows 10 Virtual Machine with 2-4 CPU’s.
 
 </p>
 <br />
