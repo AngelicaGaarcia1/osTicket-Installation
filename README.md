@@ -19,14 +19,15 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>Installation Steps</h2>
 
-<strong> <h3> STEP 1 <h3>
+
 
 <p>
 <img src="https://i.imgur.com/ELSza07.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 
-First, we want to create a Windows 10 Virtual Machine with 2-4 CPU’s.
+STEP 1
+</p> First, we want to create a Windows 10 Virtual Machine with 2-4 CPU’s.
 
 </p>
 <br />
