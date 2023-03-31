@@ -128,14 +128,115 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 </p>
 <br />
-<h4>STEP 9 </h3>
+<h4>STEP 10 </h3>
 
 <p>
-<img src="https://i.imgur.com/A96JFT2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/TaHJ5Ol.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 
-•Now it is going to ask you select configuration settings and you will select standard configuration. Next it is going to ask you to create a password for root. What this indicates is that your username will be root. After that, you can leave everything as is, continue and finish installing.
+•Next we will do some configuration in IIS. Go to the start menu and type in Internet Information Services and right click it to open it as an administrator. 
+
+•Once open look for PHP manager and select it -> Click Register New PHP Version -> Browse and find the PHP folder -> Click on php.cgi
+
+•Return to the main screen in IIS and it is strongly recommended to click restart on the web server when you make any changes.
+
+•Now exit.
 
 </p>
 <br />
+<h4>STEP 11 </h3>
+
+<p>
+<img src="https://i.imgur.com/OVxudzE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+
+•Now its time to install osTicket !
+
+•First, download osTicket-v1.15.8 zip. Now open downloads and select the osTicket folder. Inside this folder you want locate the upload folder and we want to drag that into c:\inetpub/wwwroot. All this means is open your c drive [Windows (C)] in another window then select inetpub, and click on the wwwroot folder. Now drag the upload folder into the wwwroot folder.
+
+•Now rename the upload folder to osTicket. Go back to IIS (run as admin) and restart it again.
+
+</p>
+<br />
+<h4>STEP 12 </h3>
+
+<p>
+<img src="https://i.imgur.com/21m468z.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+
+•If you go to http://localhost/osTicket/setup/ you’ll notice that there are x’s next to some extensions because they need to be enabled for you to use all features of osTicket.
+
+•Lets go to IIS -> Select PHP Manager -> Under PHP extensions click enable or disable an extension -> enable phpimap, phpintl, and phpopache.
+
+•Refresh ostTicket in the browser
+
+</p>
+<br />
+<h4>STEP 13 </h3>
+
+<p>
+<img src="https://i.imgur.com/cc68Vls.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+•Now we want to rename the file inside of osTicket that is currently named ost-sampleconfig.php. We want to rename it to ost-config.php.
+
+•Go to C-drive -> Select inetpub -> wwwroot -> osTicket -> Click on the include folder -> navigate to post-sampleconfig and rename it.
+
+</p>
+<br />
+<h4>STEP 14 </h3>
+
+<p>
+<img src="https://i.imgur.com/NML79ID.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+•Now we want to assign permission on out-config.
+
+•Right click on ost-config and select properties -> Select security -> select advanced -> disable inheritance -> Remove all inherited permission from this object -> Add -> Select a principal -> Inside the enter object name box type “everyone” -> Click check names and click ok -> select full control -> Apply.
+
+</p>
+<br />
+<h4>STEP 15 </h3>
+
+<p>
+<img src="https://i.imgur.com/ZsGnkmB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+•Download and install HeidiSQL. Once it opens select new (on the bottom left) -> type in the root password (created when you installed MySQL).
+
+</p>
+<br />
+<h4>STEP 16 </h3>
+
+<p>
+<img src="https://i.imgur.com/lv2BvvL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+•Now lets create a new database called osTicket inside of HeidiSQL.
+
+•Right click under “unnamed” -> create new -> database -> name osTicket
+
+</p>
+<br />
+<h4>STEP 17 </h3>
+
+<p>
+<img src="https://i.imgur.com/tXt7yY2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+ 
+•Now lets head back to http://localhost/osTicket/setup and complete the installation by filling in the required information.
+
+</p>
+<br />
+<strong> COMPLETE
+ 
+<p>
+<img src="https://i.imgur.com/g24AZ75.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+ Congratulations! You have completed the installation of osTicket.
+
