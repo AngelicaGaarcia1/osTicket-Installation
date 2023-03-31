@@ -52,9 +52,9 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 </p>
 <p>
  
-•now we need to install PHP (a backend web programming language) because osTicket runs off of PHP.
-
-•Download PHPManagerForIIS_V1 5.0. msg -> Open the File and install 
+Now we need to install PHP (a backend web programming language) because osTicket runs off of PHP.
+ 
+•Download PHPManagerForIIS_V1 5.0. msg -> Open the File and install
  
 </p>
 <br />
