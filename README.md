@@ -12,10 +12,9 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - Remote Desktop
 - Internet Information Services (IIS)
 
-<h2>Operating Systems Used </h2>
+<h2>Installation files</h2>
 
-- Windows 10 with 4 virutal CPU's </b> (21H2)
-
+https://drive.google.com/drive/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6
 
 <h2>Installation Steps</h2>
 <h3>STEP 1</h3>
