@@ -3,7 +3,7 @@
 </p>
 
 <h1>osTicket - Prerequisites and Installation</h1>
-This tutorial outlines the prerequisites and installation of the open-source help desk ticketing system osTicket.<br />
+This tutorial provides a step by step outline for the installation of the open-source help desk ticketing system osTicket.<br />
 
 
 <h2>Environments and Technologies Used</h2>
@@ -40,10 +40,8 @@ https://drive.google.com/drive/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6
 •Click start -> Search control panel -> Select programs -> Under Programs and Features select Turn windows features on or off -> Find Internet Information Services and check the box -> Now click the plus sign next to internet information services -> Click the plus sign next to World Wide Web Services -> Find Application development features and click the plus sign next to it and enable CGI (this allows us to install PHP).
 
 •You can double check that IIS was properly installed by typing the loopback address 127.0.0.1 into the browser and you should see a page that says Internet Information Services.
-
 </p>
 <br />
-
 <h4>STEP 3</h3>
 
 <p>
@@ -54,7 +52,6 @@ https://drive.google.com/drive/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6
 •Now we need to install PHP (a backend web programming language) because osTicket runs off of PHP.
  
 •Download PHPManagerForIIS_V1 5.0. msg -> Open the File and install.
- 
 </p>
 <br />
 
@@ -74,7 +71,7 @@ https://drive.google.com/drive/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6
 </p>
 <p>
 
- •Now let’s create a directory for PHP on the local hard drive. We will create a folder for PHP on the root of the Cdrive.
+ •Now let’s create a directory for PHP on the local hard drive. We will begin by creating a folder for PHP on the root of the C drive.
 
 •Click start -> type in “This PC” and select it -> Click on Windows (C:) -> Create a folder here and name it: PHP.
 </p>
@@ -86,7 +83,7 @@ https://drive.google.com/drive/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6
 </p>
 <p>
 
- •Download PHP 7.3.8 and extract the contents of the php-7.3.8-nts-Win32-VC15-x86 zip into the PHP folder you created in the Cdrive.
+ •Download PHP 7.3.8 and extract the contents of the php-7.3.8-nts-Win32-VC15-x86 zip into the PHP folder you created in the C drive.
 
 •Click start -> type in “This PC” and select it -> Click on Windows (C:) -> Create a folder here and name it: PHP.
 </p>
@@ -109,7 +106,7 @@ https://drive.google.com/drive/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6
 </p>
 <p>
 
- •Now it’s time to download MySQL which installs a database on the computer. osTicket needs somewhere to store the application data.
+ •Now it’s time to download MySQL which installs a database on the computer. The reason this is necessary is because osTicket needs somewhere to store the application data.
 
 •When you get to “Choose Setup Type” while installing MySQL select typical.
 
@@ -138,7 +135,7 @@ https://drive.google.com/drive/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6
 
 •Once open look for PHP manager and select it -> Click Register New PHP Version -> Browse and find the PHP folder -> Click on php.cgi
 
-•Return to the main screen in IIS and it is strongly recommended to click restart on the web server when you make any changes.
+•Return to the main screen in IIS and it is strongly recommended to click restart on the web server when you make any changes in IIS.
 
 •Now exit.
 
@@ -151,9 +148,13 @@ https://drive.google.com/drive/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6
 </p>
 <p>
 
-•Now its time to install osTicket !
+•Now its time to install osTicket!
 
-•First, download osTicket-v1.15.8 zip. Now open downloads and select the osTicket folder. Inside this folder you want locate the upload folder and we want to drag that into c:\inetpub/wwwroot. All this means is open your c drive [Windows (C)] in another window then select inetpub, and click on the wwwroot folder. Now drag the upload folder into the wwwroot folder.
+•First, download osTicket-v1.15.8 zip. Now open downloads and select the osTicket folder. Inside this folder you want locate the upload folder and we want to drag that into c:\inetpub/wwwroot. 
+ 
+•All this means is: open your c drive [Windows (C)] in another window -> select inetpub -> click on the wwwroot folder. 
+ 
+•Now drag the upload located inside of the osTicket folder into the wwwroot folder.
 
 •Now rename the upload folder to osTicket. Go back to IIS (run as admin) and restart it again.
 
@@ -166,11 +167,11 @@ https://drive.google.com/drive/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6
 </p>
 <p>
 
-•If you go to http://localhost/osTicket/setup/ you’ll notice that there are x’s next to some extensions because they need to be enabled for you to use all features of osTicket.
+•If you go to http://localhost/osTicket/setup/ you’ll notice that there are x’s next to some extensions because they need to be enabled for you to use osTicket.
 
 •Lets go to IIS -> Select PHP Manager -> Under PHP extensions click enable or disable an extension -> enable phpimap, phpintl, and phpopache.
 
-•Refresh ostTicket in the browser
+•Refresh ostTicket in the browser.
 
 </p>
 <br />
@@ -180,9 +181,10 @@ https://drive.google.com/drive/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6
 <img src="https://i.imgur.com/cc68Vls.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
+
 •Now we want to rename the file inside of osTicket that is currently named ost-sampleconfig.php. We want to rename it to ost-config.php.
 
-•Go to C-drive -> Select inetpub -> wwwroot -> osTicket -> Click on the include folder -> navigate to post-sampleconfig and rename it.
+•Go to C-drive -> Select inetpub -> wwwroot -> osTicket -> Click on the include folder -> navigate to ost-sampleconfig and rename it to ost-config.
 
 </p>
 <br />
@@ -192,9 +194,9 @@ https://drive.google.com/drive/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6
 <img src="https://i.imgur.com/NML79ID.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-•Now we want to assign permission on out-config.
+•Now we want to assign permissions on ost-config.
 
-•Right click on ost-config and select properties -> Select security -> select advanced -> disable inheritance -> Remove all inherited permission from this object -> Add -> Select a principal -> Inside the enter object name box type “everyone” -> Click check names and click ok -> select full control -> Apply.
+•Right click on ost-config and select properties -> Select security -> select advanced -> disable inheritance -> Remove all inherited permission from this object -> Add -> Select a principal -> Inside the box that says "enter object name" type: everyone -> Click check names and click ok -> select full control -> Apply.
 
 </p>
 <br />
