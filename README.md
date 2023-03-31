@@ -44,6 +44,17 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <br />
 
 <p>
+<img src="https://i.imgur.com/zyA90gd.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+•Now we need to install PHP (a backend web programming language) because osTicket runs off of PHP.
+
+•Download PHPManagerForIIS_V1 5.0. msg -> Open the File and install
+ 
+</p>
+<br />
+
+<p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
