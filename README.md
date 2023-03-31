@@ -42,7 +42,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 •You can double check that IIS was properly installed by typing the loopback address 127.0.0.1 into the browser and you should see a page that says Internet Information Services.
 </p>
 <br />
-
+<strong> STEP 3
 <p>
 <img src="https://i.imgur.com/zyA90gd.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
