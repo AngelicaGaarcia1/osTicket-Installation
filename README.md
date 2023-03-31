@@ -33,6 +33,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <img src="https://i.imgur.com/MLJy0uZ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
+ 
 •After the virtual machine is created we will begin the installation of osTicket by installing/ enabling IIS in windows with CGI.
 
 •IIS stands for internet information services. It is a web server that allows the computer to host, deploy and manage web applications.
@@ -40,16 +41,20 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 •Click start -> Search control panel -> Select programs -> Under Programs and Features select Turn windows features on or off -> Find Internet Information Services and check the box -> Now click the plus sign next to internet information services -> Click the plus sign next to World Wide Web Services -> Find Application development features and click the plus sign next to it and enable CGI (this allows us to install PHP)
 
 •You can double check that IIS was properly installed by typing the loopback address 127.0.0.1 into the browser and you should see a page that says Internet Information Services.
+
 </p>
 <br />
+
 <strong> STEP 3
+ 
 <p>
 <img src="https://i.imgur.com/zyA90gd.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
+ 
 •Now we need to install PHP (a backend web programming language) because osTicket runs off of PHP.
 
-•Download PHPManagerForIIS_V1 5.0. msg -> Open the File and install
+•Download PHPManagerForIIS_V1 5.0. msg -> Open the File and install 
  
 </p>
 <br />
